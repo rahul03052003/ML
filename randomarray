@@ -1,0 +1,23 @@
+#ask user to i/p two numbers a,b.write a program to generate a random array of shape(a,b) and print the array and avg of the array. in numpy for pyhton
+
+
+import numpy as np
+a=int(input("Enter the number of rows: "))
+b=int(input("Enter the number of columns: "))
+ran_a=np.random.rand(a,b)
+print("\n Generated random array: ")
+print(ran_a)
+avg=np.mean(ran_a)
+print("\n Average of the array: ",avg)
+
+
+o/p-
+
+Enter the number of rows: 2
+Enter the number of columns: 3
+
+ Generated random array: 
+[[0.47844902 0.55696082 0.36399232]
+ [0.04799503 0.84437873 0.2900863 ]]
+
+ Average of the array:  0.43031036848903276
