@@ -1,0 +1,11 @@
+import numpy as np
+def softmax(arr):
+    exp_a=np.exp(arr-np.max(arr))
+    return exp_a/exp_a.sum()
+
+arr=np.array([2.0,1.0,0.1])
+print(softmax(arr))
+
+o/p-
+
+[0.65900114 0.24243297 0.09856589]
