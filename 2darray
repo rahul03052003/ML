@@ -1,0 +1,23 @@
+#write a function to create a 2d array with 1 on the border and 0 inside.take 2d array shape as(a,b) as parameter to function.
+
+import numpy as np
+def create_border_array(a,b):
+    array=np.zeros((a,b),dtype=int)
+    array[0,:]=1
+    array[-1,:]=1
+    array[:,0]=1
+    array[:,-1]=1
+    
+    return array
+
+a,b=5,6
+border_array=create_border_array(a,b)
+print(border_array)
+
+o/p-
+
+[[1 1 1 1 1 1]
+ [1 0 0 0 0 1]
+ [1 0 0 0 0 1]
+ [1 0 0 0 0 1]
+ [1 1 1 1 1 1]]
