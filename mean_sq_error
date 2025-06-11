@@ -8,6 +8,6 @@ predicted=np.random.randint(1,120,5)
 print(actual,predicted)
 
 o/p-
-[11 95 62 11 76] [112  49  80  36  66]
+4047.8
 
-[30 41 98 80 67] [111 102  81  71 105]
+3579.8
